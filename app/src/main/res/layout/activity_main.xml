@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="输入你想要的东西"
+            android:background="@drawable/shape"
+            android:layout_marginLeft="30dp"
+            />
+        <ImageView
+            android:id="@+id/image_shou"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/fan"
+            />
+    </LinearLayout>
+    <ningjiaxin1.bwie.com.drylx.myview.Pull
+        android:id="@+id/pull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ningjiaxin1.bwie.com.drylx.myview.Pull>
+</LinearLayout>

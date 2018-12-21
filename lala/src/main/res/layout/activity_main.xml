@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#adf"
+        android:layout_height="45dp">
+
+        <Button
+            android:id="@+id/title_bar_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="#edf"
+            android:minHeight="45dp"
+            android:minWidth="45dp"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/title_bar_title"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginLeft="72dp"
+            android:hint="请输入要查找的内容"
+            android:singleLine="true"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/title_bar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7dp"
+            android:text="提交"
+            android:textColor="@android:color/white"
+            android:background="@null"
+            android:minHeight="45dp"
+            android:minWidth="45dp"
+            android:textSize="14sp" />
+    </RelativeLayout>
+ <LinearLayout
+     android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/zong"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="综合"
+        />
+    <Button
+        android:id="@+id/xl"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="销量"
+        />
+    <Button
+        android:id="@+id/jg"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="价格"
+        />
+    <Button
+        android:id="@+id/sx"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="筛选"
+        />
+ </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/relat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
